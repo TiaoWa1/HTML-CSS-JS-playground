@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 表單</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>這是表單</legend>
+            <p>
+                <label for="uid">帳號</label>
+                <input type="text" name="uid" id="uid" placeholder="請輸入帳號">
+            </p>
+            <p>
+                <label for="pwd">密碼</label>
+                <input type="password" name="pwd" id="pwd" placeholder="請輸入密碼">
+            </p>
+            <p><button type="submit">送出表單</button></p>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>表單元件</legend>
+            <p><input type="date"></p>
+            <p><input type="month"></p>
+            <p><input type="week"></p>
+            <p><input type="number"></p>
+            <p><input type="search"></p>
+            <p><input type="range"></p>
+            <p>
+                <label for="fruit"><input type="checkbox" name="fruit" value="banana">香蕉</label>
+                <label for="fruit"><input type="checkbox" name="fruit" value="apple">蘋果</label>
+                <label for="fruit"><input type="checkbox" name="fruit" value="orange">橘子</label>
+                <input type="checkbox" id="news" name="subscribe"><label for="news">訂閱</label>
+            </p>
+            <p><input type="color"></p>
+            <button type="submit">確認</button>
+            <!-- select 下拉式清單 -->
+            <p>
+                <select name="D2">
+                    <option value="第一項">第一項</option>
+                    <option value="第二項">第二項</option>
+                    <option value="第三項">第三項</option>
+                </select>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
