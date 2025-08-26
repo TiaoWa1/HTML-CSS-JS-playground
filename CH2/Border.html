@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border 邊框</title>
+    <style>
+        span {
+            padding: 10px; /*外邊界*/
+            margin: 5px; /*內邊界*/
+            font-size: 100px;
+        }
+        span:hover {
+            background-color: rgb(94, 94, 94);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            <span style="border: solid;">Solid</span>
+            <span style="border: double;">Double</span>
+            <span style="border: groove;">Groove</span>
+            <span style="border: dotted;">Dotted</span>
+        </p>
+        <p style="padding-top: 10px;">
+            <span style="border: ridge;">Ridge</span>
+            <span style="border: inset;">Inset</span>
+            <span style="border: outset;">Outset</span>
+            <span style="border: dashed">Dashed</span>
+        </p>
+    </div>
+</body>
+</html>
