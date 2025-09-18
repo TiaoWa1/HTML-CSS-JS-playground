@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Direction</title>
+    <style>
+        .flex {
+            display: inline-flex;
+            background-color: black;
+        }
+
+        .item {
+            box-sizing: border-box;
+            background-color: white;
+            margin: 5px;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- row 從左到右 -->
+    <div class="flex" style="flex-direction: row;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <!-- row 的相反 -->
+    <div class="flex" style="flex-direction: row-reverse;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <!-- column 上到下 -->
+    <div class="flex" style="flex-direction: column;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <!-- column 的相反 -->
+    <div class="flex" style="flex-direction: column-reverse;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+</html>
