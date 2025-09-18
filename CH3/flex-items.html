@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Direction</title>
+    <style>
+        .flex {
+            display: inline-flex;
+            background-color: black;
+            height: 250px;
+            margin-top: 5px;
+        }
+
+        .item {
+            box-sizing: border-box;
+            background-color: white;
+            margin: 5px;
+            width: 150px;
+            /* height: 50px; */
+            line-height: 50px;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- flex-start 對齊交叉軸的開始處 -->
+    <div class="flex" style="align-items: flex-start;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <!-- flex-end 對齊交叉軸的末端 -->
+    <div class="flex" style="align-items: flex-end;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <!-- center 垂直置中對齊 -->
+    <div class="flex" style="align-items: center;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <!-- stretch 拉伸至整個垂直空間 此處item有設height不起效 -->
+    <div class="flex" style="align-items: stretch;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+</html>
