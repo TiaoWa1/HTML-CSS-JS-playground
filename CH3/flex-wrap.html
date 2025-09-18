@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex wrap</title>
+    <style>
+        .flex {
+            display: inline-flex;
+            background-color: black;
+            box-sizing: border-box;
+            width: 500px;
+        }
+
+        .item {
+            box-sizing: border-box;
+            background-color: white;
+            margin: 5px;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- nowrap 不斷行 -->
+    <div class="flex" style="flex-wrap: nowrap;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <!-- wrap 多行 -->
+    <div class="flex" style="flex-wrap: wrap;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <!-- wrap-reverse 多行且主軸起點與終點相反 -->
+    <div class="flex" style="flex-wrap: wrap-reverse;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
