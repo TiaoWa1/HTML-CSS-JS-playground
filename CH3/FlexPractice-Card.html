@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .All-Container {
+            background-color: bisque;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .flex-left-right {
+            width: 20%;
+        }
+
+        .Card-container {
+            background-color: rgb(248, 211, 165);
+            width: 60%;
+            justify-content: space-between;
+        }
+
+        .Cards {
+            background-color: white;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: calc(33.333% - 40px);
+            height: 500px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        .direction-column {
+            flex-direction: column;
+        }
+
+        .card-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+
+        .card-caption {
+            padding: 15px;
+            background-color: #FAF7F0;
+            border-top: 1px solid #e0dcd0;
+            gap: 10px;
+        }
+        
+        .card-title {
+            font-size: 20px;
+            color: #333;
+            margin: 0;
+        }
+
+        .card-content {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex All-Container">
+        <div class="d-flex flex-left-right"></div>
+        <div class="d-flex Card-container">
+            <figure class="d-flex Cards direction-column">
+                <img class="card-img" src="./img/cat1.png" alt="">
+                <figcaption class="d-flex direction-column card-caption">
+                    <h3 class="card-title">等等 這我不要吃</h3>
+                    <div class="card-content d-flex justify-between">
+                        <p class="text-content">我就不吃</p>
+                        <button class="card-btn">123</button>
+                    </div>
+                    <div class="card-price">$120</div>
+                </figcaption>
+            </figure>
+            <figure class="d-flex Cards">
+                
+            </figure>
+            <figure class="d-flex Cards">
+
+            </figure>
+        </div>
+        <div class="d-flex flex-left-right"></div>
+    </div>
+</body>
+</html>
