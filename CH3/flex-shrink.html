@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-shrink</title>
+    <style>
+        .flex {
+            display: flex;
+            background-color: black;
+            height: 250px;
+            margin-top: 5px;
+            width: 500px;
+        }
+
+        .item {
+            box-sizing: border-box;
+            background-color: white;
+            margin: 5px;
+            width: 200px;
+            /* height: 50px; */
+            line-height: 50px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        
+        .shrink0 {
+            flex-shrink: 0;
+        }
+        
+        .shrink1 {
+            flex-shrink: 1;
+        }
+
+        .shrink2 {
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="item">default flex-shrink:1</div>
+        <div class="item">default flex-shrink:1</div>
+        <div class="item">default flex-shrink:1</div>
+        <div class="item">default flex-shrink:1</div>
+    </div>
+    <!-- flex-shrink:0 表示不壓縮 就會造成溢出 -->
+    <div class="flex">
+        <div class="item shrink0">flex-shrink:0</div>
+        <div class="item shrink0">flex-shrink:0</div>
+        <div class="item shrink0">flex-shrink:0</div>
+        <div class="item shrink0">flex-shrink:0</div>
+    </div>
+    <!-- flex-shrink大於1 縮小比例更高 -->
+    <div class="flex">
+        <div class="item shrink1">flex-shrink: 1</div>
+        <div class="item shrink2">flex-shrink: 2</div>
+        <div class="item shrink2">flex-shrink: 2</div>
+        <div class="item shrink2">flex-shrink: 2</div>
+    </div>
+</body>
+</html>
