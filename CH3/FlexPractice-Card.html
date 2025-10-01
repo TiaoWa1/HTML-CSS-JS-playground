@@ -57,6 +57,9 @@
             background-color: #FAF7F0;
             border-top: 1px solid #e0dcd0;
             gap: 10px;
+            height: 100%;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
         }
         
         .card-title {
@@ -66,7 +69,24 @@
         }
 
         .card-content {
-            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-content {
+            font-size: 14px;
+            color: #666;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 12px;
+            cursor: pointer;
+        }
+
+
+        .card-price {
+            font-size: 18px;
+            color: #AD8619;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -78,29 +98,29 @@
                 <img class="card-img" src="./img/cat1.png" alt="">
                 <figcaption class="d-flex direction-column card-caption">
                     <h3 class="card-title">等等 這我不要吃</h3>
-                    <div class="card-content d-flex justify-between">
+                    <div class="card-content d-flex">
                         <p class="text-content">我就不吃</p>
                         <button class="card-btn">123</button>
                     </div>
                     <div class="card-price">$120</div>
                 </figcaption>
             </figure>
-            <figure class="d-flex Cards">
+            <figure class="d-flex Cards direction-column">
                 <img class="card-img" src="./img/cat1.png" alt="">
                 <figcaption class="d-flex direction-column card-caption">
                     <h3 class="card-title">等等 這我不要吃</h3>
-                    <div class="card-content d-flex justify-between">
+                    <div class="card-content d-flex">
                         <p class="text-content">我就不吃</p>
                         <button class="card-btn">123</button>
                     </div>
                     <div class="card-price">$120</div>
                 </figcaption>
             </figure>
-            <figure class="d-flex Cards">
+            <figure class="d-flex Cards direction-column">
                 <img class="card-img" src="./img/cat1.png" alt="">
                 <figcaption class="d-flex direction-column card-caption">
                     <h3 class="card-title">等等 這我不要吃</h3>
-                    <div class="card-content d-flex justify-between">
+                    <div class="card-content d-flex">
                         <p class="text-content">我就不吃</p>
                         <button class="card-btn">123</button>
                     </div>
