@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Datatype</title>
+</head>
+<body>
+    <div id="number"></div>
+    <div id="string"></div>
+    <div id="boolean"></div>
+    <div id="undefined"></div>
+</body>
+</html>
+<script>
+    let x = 123;
+    document.getElementById("number").innerHTML = (x + " | " + typeof x);
+
+    var MyStr = "Hello World";
+    document.getElementById("string").innerHTML = (MyStr + " | " + typeof MyStr);
+
+    let test_boolean1 = 1;
+    let test_boolean2 = 0;
+    document.getElementById("boolean").innerHTML = ("Boolean: " + Boolean(test_boolean1) + "<br>Boolean: " + Boolean(test_boolean2));
+
+    let Test_Undefined;
+    document.getElementById("undefined").innerHTML = (Test_Undefined);
+</script>

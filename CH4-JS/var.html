@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var</title>
+</head>
+<body>
+    <div id="a"></div>
+    <div id="b"></div>
+    <div id="c"></div>
+</body>
+</html>
+<script>
+    var x="5", y="3", z="1", w=null;
+    a = x + y + z; // 字串內容為數值時，相加仍是字串
+    b = x - y - z; // 字串內容為數值時，相減為數值
+    c = w * 5 * 5; // 變數值為null，乘任何數皆為0
+    document.getElementById("a").innerHTML = ("x + y + z = " + a);
+    document.getElementById("b").innerHTML = ("x - y - z = " + b);
+    document.getElementById("c").innerHTML = ("w * 5 * 5 = " + c);
+</script>
